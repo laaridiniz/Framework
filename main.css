@@ -1,0 +1,33 @@
+main{
+    background: url(keyboard.jpg)no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+
+div.container{
+    height: 30em;
+    position: relative;
+    overflow: hidden;
+}
+
+div.container h1{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
